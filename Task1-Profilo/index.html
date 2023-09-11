@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="web-logo.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=1000px, initial-scale=1.0">
+    <title>MY PROFILO</title>
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+    <div class="nav" >
+       <img class="active"id="logo"src="mylogo.png" alt="" srcset="">
+        <a id="myTopnav"href="#div2">Skills</a>
+        <a id="myTopnav"href="#project">Projects</a>
+        <a id="myTopnav"href="#res">Resume</a>
+        <a id="myTopnav"href="#cont">Contact</a>
+    </div>
+    <div class="div1 reveal" >
+        <div>
+            <h1>Hi all, I'M Mohamed Hanifa Harish <img id="hi" src="hi.gif" alt=""></h1>
+            <br><br>
+            <p class="para">I'm a passionate web developer dedicated to crafting exceptional digital experiences. With a blend of creativity and technical expertise, I transform ideas into visually stunning and highly functional websites. My goal is to make the web a better place by delivering user-friendly, responsive, and fast-loading websites that leave a lasting impression.
+               <br><br> <br>Let's work together to make your web presence shine! Feel free to contact me to discuss your next project or for any web development inquiries.
+            </p>
+            <p id="social"><a href="https://github.com/" target="_blank"><img src="github.png" alt=""></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="linked-in.png" alt=""></a>
+            <a href="mailto:someone@gmail.com" target="_blank"><img src="mail.png" alt=""></a></p>
+            <p><a href="#cont"><button type="button"  id="con">Contact Me</button></a>  <a href="resume.png" download=""><button type="button" onclick="" id="con">See My Resume</button></a></p>
+        </div>
+       
+        <div><img src="back.jpg" alt="" srcset=""></div>
+    </div>
+    <div class="div2 reveal" id="div2">
+        <div>
+            <img src="back1.png" alt="">
+        </div>
+        <div><br><br><br></div>
+        
+        <div id="res1">
+            <h1 >Skills</h1>
+            <ul class="para">
+                <li>Front-end Development (HTML, CSS, JavaScript)</li>
+                <li>Back-end Development (Node.js, Python, PHP)</li>
+                <li>Responsive Web Design</li>
+                <li>UI/UX Design Principles</li>
+                <li>UI/UX Design Principles</li>
+                <li>Performance Optimization</li>
+                <li>Content Management Systems (WordPress, Drupal)</li>
+                <li>E-commerce Solutions</li>
+                <li>SEO Best Practices</li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="reveal" id="project">Projects</h1>
+    <br>
+  <div class="div3 reveal">
+    <div class="card">
+      <h1>E-commerce Website for Fashion Boutique</h1>
+      <p class="para">Designed and developed a stunning e-commerce platform for a high-end fashion boutique. Implemented a user-friendly interface with advanced search and filtering options, integrated secure payment gateways, and optimized for mobile responsiveness. Resulted in a 35% increase in online sales within the first quarter.</p>
+    </div>
+    <br>
+    <div class="card">
+      <h1>Portfolio Website for Freelance Photographer</h1>
+      <p class="para">Crafted a visually captivating portfolio website to showcase a photographer's work. Employed a minimalist design approach that prioritized image quality and loading speed. Implemented a custom CMS for easy content updates. The website now serves as a professional showcase, attracting new clients and collaborations.</p>
+    </div>
+    <br>
+  </div>
+  <div class="div3 reveal">
+    <div class="card">
+      <h1>Online Learning Platform for Education Nonprofit</h1>
+      <p class="para">Collaborated with an education nonprofit to build a comprehensive online learning platform. Developed user-friendly dashboards for both students and educators, enabling seamless communication and coursework management. Integrated gamification elements to enhance user engagement. The platform has positively impacted the learning experiences of thousands of students.</p>
+    </div>
+    <div class="card">
+      <h1>Corporate Intranet Portal for Global Tech Company</h1>
+      <p class="para">Designed and implemented a secure and efficient corporate intranet portal for a global technology company with thousands of employees. Streamlined internal communication, document sharing, and project collaboration. Integrated advanced security features and single sign-on (SSO) for enhanced data protection. Increased employee productivity and streamlined company-wide processes.</p>
+    </div>
+  </div>
+<br>
+  <div class="div4 reveal">
+    <div id="res">
+      <h1>Resume</h1>
+      <br>
+      <img  src="resume.png" alt=""></div>
+    
+    <div id="res1"><img src="res.jpg" alt=""></div>
+  </div>
+<br><br><br>
+<h1 class="reveal" id="cont">Contact</h1>
+  <div  class="div4 reveal">
+    <div id="conimg">
+      <img src="cont.jpg" alt="">
+    </div>
+    <div >
+      <ul class="contact">
+        <li class="contact1"><a href="mailto:mohamedhanifaharish1@gmail.com"><img src="mail1.png" alt="">&nbsp;&nbsp;&nbsp;MOHAMEDHANIFAHARISH1@GMAIL.COM</a></li>
+        <li class="contact1"><a href="https://www.linkedin.com/in/abrar-musharraf-p-044294249/" target="_blank"><img src="linkedin.png" alt="">&nbsp;&nbsp;&nbsp;MOHAMED HANIFA HARISH</a></li>
+        <li class="contact1"><a href="tel:8248002316"><img src="call.png" alt="">&nbsp;&nbsp;&nbsp;+91 8248002316</a></li>
+      </ul>
+
+    </div>   
+  </div>
+<script type="text/JavaScript">
+  window.addEventListener('scroll',reveal);
+  function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+    for(var i=0; i<reveals.length; i++){
+      var windowheight = window.innerHeight;
+      var revealtop =reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+
+      if (revealtop<windowheight-revealpoint) {
+        reveals[i].classList.add('active');
+      }
+      else{
+        reveals[i].classList.remove('active');
+      }
+    
+    }
+    
+  }
+</script>
+</body>
+<footer class="foot">
+<p>©Copyright By MOHAMED HANIFA HARISH</p>
+</footer>
+</html>
